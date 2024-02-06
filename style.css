@@ -1,0 +1,120 @@
+body {
+    background: linear-gradient(to right, rgb(252, 222, 168), lightblue, rgb(133, 133, 235));
+}
+
+.tds {
+    border-radius: 40px;
+    border: 3px solid whitesmoke;
+    color: whitesmoke;
+}
+
+#get_started {
+    border-radius: 40px;
+    background-color: rgb(1, 161, 235);
+    color: black;
+    font-weight: bold;
+}
+
+.img_frame {
+    background-color: rgba(250, 254, 255, 0.5);
+}
+
+.includes {
+    position: relative;
+}
+
+.circ1 {
+    position: absolute;
+    top: -10%;
+    left: 24%;
+    z-index: -2;
+    height: 50%;
+}
+
+.circ2 {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    z-index: -2;
+    height: 50%;
+}
+
+.lower_rect {
+    position: absolute;
+    top: 70%;
+    z-index: -1;
+    height: 200px;
+}
+
+.tool_logo_frame {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgba(141, 238, 255, 0.5);
+    box-shadow: 1px 1px 1px rgb(1, 138, 148);
+    display: flex;
+    align-items: center;
+}
+
+.tool_logo {
+    height: 30px;
+    width: 30px;
+}
+
+.card {
+    margin-top: 10px;
+    background-color: rgba(250, 254, 255, 0.712);
+    box-shadow: 2px 2px 5px rgba(177, 177, 177, 0.5);
+}
+
+.custom_list {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.custom_list_item {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.custom_list_item::before {
+    content: "";
+    width: 20px;
+    /* Adjust the width of the image */
+    height: 20px;
+    /* Adjust the height of the image */
+    background-image: url('/assets/Purple_Circle.png');
+    /* Replace with the URL of your image */
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+}
+
+.seat_table {
+    position: relative;
+}
+
+.table {
+    position: relative;
+    z-index: 2;
+}
+
+.circ3 {
+    height: 50%;
+    position: absolute;
+    top: 40%;
+}
+
+@media screen and (max-width: 650px) {
+    .lower_rect {
+        position: absolute;
+        top: 50%;
+        z-index: -1;
+        height: 30vw;
+    }
+}
